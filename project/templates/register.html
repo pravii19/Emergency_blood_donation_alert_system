@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Blood Registration Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+    
+    
+      
+    
+      
+  </head>
+  <body>
+    <div class="large">
+    <h1>Donar's Registration Form</h1>
+    <p>Donar's fill out this form with the required information</p>
+    <form  action="/register" method="POST" autocomplete="off">
+      <fieldset>
+        <label for="name"
+          >Enter Your Name:
+          <input id="name" name="name" type="text" required
+        /></label>
+        <label for="email"
+          >Enter Your Email:
+          <input id="email" name="email" type="email" required
+        /></label>
+        <label for="phone_no">Enter Your Phone No:</label>
+<input id="phone_no" name="phone_no" type="tel" required pattern="[+]{1}[0-9]{1,15}" value="+91" />
+
+      </fieldset>
+      <fieldset>
+        <label for="gender"
+          >Select Your Gender 
+          <select name="gender" id="gender">
+            <option value="">(select one)</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Transgender">Transgender</option>
+          </select>
+
+        </label>
+        
+      </fieldset>
+      <fieldset>
+        <label for="age"
+          >Enter your age (years):
+          <input id="age" type="number" name="age" min="18" max="65"
+        /></label>
+        <label for="blood_group"
+          >Select Your Blood Group
+          <select id="blood_group" name="blood_group">
+            <option value="">(select one)</option>
+            <option value="O+">O+ve</option>
+            <option value="A+">A+ve</option>
+            <option value="B+">B+ve</option>
+            <option value="AB+">AB+ve</option>
+            <option value="O-">O-ve</option>
+            <option value="A-">A-ve</option>
+            <option value="B-">B-ve</option>
+            <option value="AB-">AB-ve</option>
+          </select>
+        </label>
+        <label for="location"
+          >Select Your Location
+          <select id="location" name="location">
+            <option value="">(select one)</option>
+            <option value="Alagar Kovil Road">Alagar Kovil Road</option>
+            <option value="Anaiyur">Anaiyur</option>
+            <option value="Anna Nagar">Anna Nagar</option>
+            <option value="Anupanadi">Anupanadi</option>
+            <option value="Arapalayam">Arapalayam</option>
+            <option value="Avaniyapuram">Avaniyapuram</option>
+            <option value="Bibikulam">Bibikulam</option>
+            <option value="Chinna Chokikulam">Chinna Chokikulam</option>
+            <option value="Ellis Nagar">Ellis Nagar</option>
+            <option value="Goripalayam">Goripalayam</option>
+            <option value="KK Nagar">KK Nagar</option>
+            <option value="K Puthur">K Puthur</option>
+            <option value="Kalavasal">Kalavasal</option>
+            <option value="kochadai">kochadai</option>
+            <option value="Kudal Nagar">Kudal Nagar</option>
+            <option value="Mattuthavani">Mattuthavani</option>
+            <option value="Narimedu">Narimedu</option>
+            <option value="Othakadai">Othakadai</option>
+            <option value="Palankanatham">Palankanatham</option>
+            <option value="SS Colony">SS Colony</option>
+            <option value="Sellur">Sellur</option>
+            <option value="Simmakkal">Simmakkal</option>
+            <option value="Theni Main Road">Theni Main Road</option>
+            <option value="Thallakulam">Thallakulam</option>
+            <option value="Villapuram">Villapuram</option>
+            <option value="Thiruparankundram">Thiruparankundram</option>
+            <option value="Thirumangalam">Thirumangalam</option>
+            <option value="Usilampatti">Usilampatti</option>
+            <option value="Vadipatti">Vadipatti</option>
+            <option value="Melur">Melur</option>
+            <option value="Alanganallur">Alanganallur</option>
+          </select>
+        </label>
+        <label for="address"
+          >Enter Your Address:
+          <textarea
+            id="address"
+            name="address"
+            rows="3"
+            cols="30"
+            placeholder="Please fill your address..."
+          ></textarea>
+        </label>
+      </fieldset>
+      <label for="terms-and-conditions">
+        <input
+          class="inline"
+          id="terms-and-conditions"
+          type="checkbox"
+          required
+          name="terms-and-conditions"
+        />
+        I accept the terms and conditions
+        
+      
+      <input type="submit" value="Submit" >
+    </form>
+    </div>
+     
+
+
+  </body>
+  
+</html>

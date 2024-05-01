@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='thank.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Source+Sans+Pro" rel="stylesheet">
+    <title>ThankYou</title>
+    <script>
+        // Add event listener to the button
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('.go-home').addEventListener('click', function() {
+                // Redirect to the index1.html page
+                window.location.href = "{{ url_for('index1') }}";
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="content">
+        <div class="wrapper-1">
+            <div class="wrapper-2">
+                <h1>Thank you!</h1>
+                <p>Thank You for registering for Blood Donation!</p>
+                <p>Save more lives together 🩸</p>
+              
+                    <!-- Add your form fields here if needed -->
+                    <button class="go-home">Go Home</button>
+                           </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>

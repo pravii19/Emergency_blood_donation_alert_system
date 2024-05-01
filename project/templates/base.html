@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+          <a href="#">
+            
+            🩸 Blood Donation
+          </a>
+        </div>
+        <div class="navbar-home">
+          <a href="/donor">Donor</a>
+          <a href="/">Home</a>
+          
+        </div>
+      </nav>
+
+      
+        <div class="container1" style="background-color:rgba(248, 246, 248, 0.7);">
+            <div class="content">
+                <h1>Save Blood Save Life 🩸</h1>  
+              </div>
+    </div>
+      
+    
+   
+    
+    <div class="container6">
+      <div class="contentLeft">
+        <div class="row">
+          <div class="imgWrapper">
+            <img src="{{ url_for('static', filename='do1.jpg') }}" alt="">
+        </div>
+        <div class="imgWrapper">
+          <img src="{{ url_for('static', filename='do2.jpg') }}" alt="">
+      </div>
+        <div class="imgWrapper">
+            <img src="{{ url_for('static', filename='blood4.jpg') }}" alt="">
+        </div>
+        
+            <div class="imgWrapper">
+                <img src="{{ url_for('static', filename='do3.jpg') }}" alt="">
+            </div>
+            
+           
+            
+        </div>
+      </div>
+      <div class="contentRight" style="background-color: antiquewhite; width: 100%;">
+        <div class="content">
+          <h4>Welcome To</h4>
+          <h2>Admin page🩸</h2>
+          <p>You can chat with the chatbot to find the active donor in a emergency situation. The chatbot will give you  list of active  donor around  the approriate location that you have entered, and give the information about the donor that might helpful for  you to connect with the donor.<br> Stay connect to us always!!<br> To gift someone a precious life together 💝</p>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="chatbox">
+            <div class="chatbox__support">
+                <div class="chatbox__header">
+                    <div class="chatbox__image--header">
+                    </div>
+                    <div class="chatbox__content--header">
+                        <h4 class="chatbox__heading--header">BLOOD DONATION CHATBOT</h4>
+                        <p class="chatbox__description--header"> </p>
+                    </div>
+                </div>
+                <div class="chatbox__messages">
+                    <div></div>
+                </div>
+                <div class="chatbox__footer">
+                    <input type="text" placeholder="Write a message...">
+                    <button class="chatbox__send--footer send__button">Send</button>
+                </div>
+            </div>
+            <div class="chatbox__button">
+                <button><img src="{{ url_for('static', filename='image.png') }}" /></button>
+            </div>
+        </div>
+    </div>
+   
+  
+    
+
+    <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+
+</html>

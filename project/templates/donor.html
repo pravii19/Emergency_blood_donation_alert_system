@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Donors</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a href="#">
+                🩸 Blood Donation
+            </a>
+        </div>
+        <div class="navbar-home">
+            <a href="/admin">Admin</a>
+        </div>
+    </nav>
+
+    <div class="container" style="margin-top: 70px;">
+        <h1>Registered Donors</h1>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone Number</th>
+                    <th>Gender</th>
+                    <th>Age</th>
+                    <th>Blood Group</th>
+                    <th>Location</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for user in users %}
+                <tr>
+                    <td>{{ user.name }}</td>
+                    <td>{{ user.email }}</td>
+                    <td>{{ user.phone_no }}</td>
+                    <td>{{ user.gender }}</td>
+                    <td>{{ user.age }}</td>
+                    <td>{{ user.blood_group }}</td>
+                    <td>{{ user.location }}</td>
+                    <td>{{ user.address }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+
+</html>

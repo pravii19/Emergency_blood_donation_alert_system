@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Agbalumo", system-ui;
+  overflow-x: hidden;
+  
+}
+
+.content-wrap {
+  display: flex;
+}
+.container5 {
+  flex: 1; /* Take up available space */
+  padding: 10px;
+  height: 200%;
+  align-items: center;
+  justify-content: center; /* Align content to the right */
+  padding: 20px;
+  position: relative; 
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 50px;
+}
+.container5::before{
+  content: '';
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  background-color: pink;
+  z-index: -1;
+}
+.container10 {
+  flex: 1; /* Take up available space */
+  padding: 10px;
+  height: 100%;
+  align-items: center;
+  justify-content: center; /* Align content to the right */
+  padding: 20px;
+  position: relative; 
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: -190px;
+}
+.container10::before{
+  content: '';
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  background-color: paleturquoise;
+  z-index: -1;
+}
+.container10 h1,
+.container10 p{
+  position: relative;
+  z-index: 1;
+  margin: 20;
+  margin-top: 190px;
+}
+
+
+.bg5 {
+  
+  width: 50%;
+  height: 92vh;
+  position: relative;
+  overflow: hidden;
+  margin-top: 98px;
+  
+  padding-top: 5px;
+}
+.container5 h1,
+.container5 p{
+  position: relative;
+  z-index: 1;
+  margin: 20;
+}
+
+.wrap-content {
+  display: flex;
+}
+.container1 {
+  flex: 2; /* Take up available space */
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 200%; /* Ensure the container takes up the full height of the section */
+
+}
+
+.bg1 {
+  width: 50%;
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.slogan {
+  width: 100%;
+  text-align: center;
+  margin-top: 90px;
+}
+
+.animated-text {
+  animation: slideIn 4s ease-in-out infinite alternate, changeColor 10s ease-in-out infinite;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes changeColor {
+  0% {
+    color: #ff0303; /* Start color */
+  }
+  25% {
+    color: #0c0c0c; /* Color change at 25% of the animation */
+  }
+  50% {
+    color: #ff0303; /* Color change at 50% of the animation */
+  }
+  75% {
+    color: #0c0c0c; /* Color change at 75% of the animation */
+  }
+  100% {
+    color: #ff0303; /* End color */
+  }
+}
+
+
+.container3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 90vh;
+  background-color:  #fa5951;
+}
+
+.card {
+  width: 350px;
+  height: 450px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100px;
+  margin-top: 20px;
+}
+
+.card h2 {
+    margin-top: -39px;
+}
+
+h6 a {
+  text-decoration: none;
+  color: red;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo .logo-image {
+  margin-right: 10px; /* Adjust the margin to your preference */
+}
+
+.logo .logo-text {
+  font-weight: bold;
+}
+
+#slideshow {
+  overflow: hidden;
+  height: 510px;
+  width: 728px; /* Adjust width as needed */
+  margin: 0; /* Remove margin auto */
+  float: right; /* Align to the right side */
+}
+
+
+.slide-wrapper {
+  width: 2912px;
+  animation: slide 10s ease infinite;
+  
+}
+
+.slide {
+  float: left;
+  height: 510px;
+  width: 728px;
+}
+
+.slide:nth-child(1) {
+  background: #fefcfd;
+}
+
+.slide:nth-child(2) {
+  background: #fefcfd;
+}
+
+.slide:nth-child(3) {
+  background: #fefcfd;
+}
+
+.slide:nth-child(4) {
+  background:#fefcfd;
+}
+
+.slide-number {
+  color:#fefcfd ;
+  text-align: center;
+  font-size: 10em;
+}
+
+@keyframes slide {
+  20% {margin-left: 0px;}
+  30% {margin-left: -728px;}
+  50% {margin-left: -728px;}
+  60% {margin-left: -1456px;}
+  70% {margin-left: -1456px;}
+  80% {margin-left: -2184px;}
+  90% {margin-left: -2184px;}
+}

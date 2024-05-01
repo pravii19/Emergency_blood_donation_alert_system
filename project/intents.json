@@ -1,0 +1,61 @@
+{
+    "intents": [
+      {
+      "tag": "Alert",
+      "patterns": [
+        "emergency",
+        "Emergency",
+        "urgent"
+  
+        
+      ],
+      "responses": ["please enter the hospital name",
+      "enter the hospital name",
+      "I can help you , please enter the hospital name"
+      ]
+    },
+    {
+      "tag": "Hospitalname",
+      "patterns": ["meenakshi mision","vellamal hospital","rajaji gandhi","apollo hospital","vadamalayan hospital","lakshmana multispectality","preeti hospital","vickram hospital"],
+      "responses": ["Enter the  location of the hospital","I can help you , please enter the hospital location"]
+    },
+    {
+      "tag": "location",
+      "patterns": [
+        "madurai","sivagangai","sivakasi","theni","dindugal"
+      ],
+      "responses": [
+        "Please enter the Blood group needed","Enter the blood Group needed","can you please give me the blood group needed for emergency","i can help you, please provide the needed blood group"
+      
+      
+      ]
+      },
+    {
+      "tag": "blood_group",
+      "patterns": ["O+"," O-","A+"," A-","B+"," B-"," AB+","  AB-"],
+      "responses": ["enter the confirmation number",
+        "please enter the phone number for donor confirmation"
+      ]
+    },
+    
+      {
+        "tag": " send",
+        "patterns": [
+          "Can you send sms to the donors","send the alert msg to donor ","send"
+        ],
+        "responses": [
+          "Sure! send the sms to the active donors"
+        ]
+      },
+      {
+        "tag": "thank",
+        "patterns": [
+          "thank you ","thanks"
+        ],
+        "responses": [
+          "Welcome","feel to ask me any help!","have a nice day"
+        ]
+      }
+    ]
+}
+

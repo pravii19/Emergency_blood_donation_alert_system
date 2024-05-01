@@ -1,0 +1,100 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    color: #ffffff;
+    font-family: Tahoma;
+    font-size: 20px;
+    background-image: url(bloodbg1.jpg);
+    background-size: 105%;
+    background-position: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+     
+  }
+  h1,
+  p {
+    margin: 1em auto;
+    text-align: center;
+  }
+  
+  form {
+    width: 40vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+  }
+  
+  fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid rgb(160, 12, 12);
+  }
+  
+  fieldset:last-of-type {
+    border-bottom: none;
+  }
+  
+  label {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  input,
+  textarea,
+  select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+  }
+  
+  input,
+  textarea {
+    background-color: rgb(160, 12, 12);
+    border: 1px solid white;
+    color: white;
+  }
+  
+  .inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: rgb(155, 26, 26);
+    border-color: white;
+    min-width: 300px;
+  }
+  select{
+    background-color: rgb(160, 12, 12);
+    border-color: white;
+    color:white;
+  }
+  .inline {
+    display: inline;
+  }
+  a {
+    color: #e41515;
+  }
+  .large {
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    margin: auto;
+    padding-bottom: 0;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    z-index: 2;
+  }
+  .large {
+    backdrop-filter: blur(10px);
+    background-color: rgba(167, 87, 87, 0.534);
+    max-width: 40%;
+   
+  }

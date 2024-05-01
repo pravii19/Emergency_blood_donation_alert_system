@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='service.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style1.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+    <!-- Unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+</head>
+<body>
+
+    <section>
+        <nav>
+          <div class="menu">
+      
+            <div class="logo">
+                <a href="#">
+                    <img src="{{ url_for('static', filename='logo.jpg') }}" class="logo-image">
+                    <span class="logo-text">Blood donation</span>
+                </a>
+            </div>
+            
+            <ul>
+              <li><a href="{{ url_for('index1') }}" >Home</a></li>
+              
+              <li><a href="{{ url_for('about') }}" >About us</a></li>
+                <li><a href="{{ url_for('service') }}" >Services</a></li>
+                <li><a href="{{ url_for('contact') }}" >Contact</a></li>
+            </ul>
+    
+            <button class="button" id="form-open">Login</button>
+          </div>
+          </nav>
+      
+      </section>
+      
+    <!-- Container 1 -->
+    <main class="content-wrapping">
+        <div class="background">
+            <img src="{{ url_for('static', filename='service1.jpg') }}" id="image" />
+        </div>
+        <div class="text-container" style="margin-top: 100px;">
+            <h1 style="margin-top: 45px; font-size: 45px; text-align: start">
+                Services
+            </h1>
+            <br />
+            <p>
+                The service provided is an emergency blood donation chatbot
+                facilitating swift matching of blood types with available donors,
+                enabling rapid responses to urgent blood needs. Utilizing
+                location-based search, real-time notifications, and appointment
+                scheduling assistance, the chatbot ensures efficient coordination
+                between donors and recipients, ultimately saving lives.
+            </p>
+            <br>
+            <ul>
+                <li><b>🗸</b> 24/7 Availability</li>
+                <li><b>🗸</b> Blood Type Matching</li>
+                <li><b>🗸</b> Location-Based Assistance and Emergency Contacts</li>
+                <li><b>🗸</b> Urgency Priority</li>
+                <li><b>🗸</b> Feedback and Improvement</li>
+            </ul>
+        </div>
+    </main>
+
+    <!-- Container 2 -->
+    <main class="wrapping-content">
+        <div class="text-container1" style="margin-top: 60px;">
+            
+            <h1 style="font-size: 40px;transform: translateY(-100%);margin-top: 50px;">24/7 Availability</h1>
+            <br />
+            <p style="margin-top: -20px;">
+                24/7 blood giving services operate around the clock, allowing
+                individuals to donate blood or receive blood transfusions at any time,
+                day or night. This continuous availability ensures that hospitals and
+                medical facilities have access to a steady and reliable blood supply,
+                crucial for treating patients with emergency medical conditions,
+                surgeries, and other medical procedures. By offering round-the-clock
+                blood donation opportunities and transfusion services, these
+                initiatives cater to urgent needs, contributing to improved patient
+                outcomes and ultimately saving lives by providing timely access to
+                blood products when they are needed most.
+            </p>
+            <br />
+        </div>
+        <div class="background1">
+            <img src="{{ url_for('static', filename='service.jpg') }}" id="image1" />
+        </div>
+    </main>
+
+    <!-- Container 3 -->
+    <main class="content-wrapping1" style="margin-top: -20px;">
+        <div class="background2" style="margin-top: -20px;">
+            <img src="{{ url_for('static', filename='service11.jpg') }}" id="image2" />
+        </div>
+        <div class="text-container2">
+            <h1 style="font-size: 45px; text-align: start; margin-top: 35px;">
+                Blood Type Matching
+            </h1>
+            <br />
+            <p>
+                Blood type matching is the process of determining compatibility between the blood types of a donor and a recipient before a blood transfusion. It involves identifying specific antigens present on the surface of red blood cells, such as the A, B, and Rh factors. Matching compatible blood types helps prevent adverse reactions, such as hemolytic transfusion reactions, which can occur if incompatible blood is transfused. Ensuring proper blood type matching is essential for the safety and efficacy of blood transfusion procedures.
+            </p>
+            <br />
+        </div>
+    </main>
+
+    <!-- Container 4 -->
+    <main class="wrapping-content1" style="margin-top: 50px;">
+        <div class="text-container3" style="margin-top: 40px;">
+            <h1 style="font-size: 40px; text-align: start;">Location-Based Assistance and Emergency Contacts</h1>
+            <br />
+            <p>
+                Location-Based Assistance: Utilizing geolocation technology, this service identifies nearby blood donors, ensuring swift responses to urgent blood donation needs. By pinpointing donors' locations relative to the requester's location, the chatbot facilitates quick coordination for timely blood donations.
+            </p>
+            <br />
+            <p>
+                Emergency Contacts: This service provides immediate access to critical contact information for healthcare facilities and emergency services. By offering direct access to essential contacts during urgent situations, it ensures swift assistance and support when needed most.
+            </p>
+        </div>
+        <div class="background3">
+            <img src="{{ url_for('static', filename='service9.jpg') }}" id="image3" />
+        </div>
+    </main>
+
+    <!-- Container 5 -->
+    <main class="content-wrapping2">
+        <div class="background4" style="margin-top: -30px;">
+            <img src="{{ url_for('static', filename='service7.jpg') }}" id="image4" />
+        </div>
+        <div class="text-container4" style="margin-top: 50px;">
+            <h1 style="font-size: 45px; text-align: start">
+                Urgency Priority
+            </h1>
+            <br />
+            <p>
+                Urgency Priority refers to the system by which urgent requests for blood donations are prioritized and expedited. This process ensures that critical cases, such as emergency surgeries or life-threatening medical conditions, receive immediate attention and support. By prioritizing urgent needs, the chatbot aims to facilitate swift responses and timely access to life-saving blood donations, ultimately improving patient outcomes and saving lives.
+            </p>
+            <br />
+        </div>
+    </main>
+
+    <!-- Container 6 -->
+    <main class="wrapping-content2" style="margin-top: 40px;">
+        <div class="text-container5" style="margin-top: 50px;">
+            <h1 style="font-size: 40px">Feedback and Improvement</h1>
+            <br />
+            <p>
+                Feedback and Improvement involve gathering user input to enhance the quality and effectiveness of services provided. By encouraging users to share their experiences and suggestions, the chatbot can identify areas for enhancement and implement necessary improvements. This iterative process fosters continuous development, resulting in a more user-friendly and efficient system that better meets the needs of donors and recipients alike.
+            </p>
+            <br />
+        </div>
+        <div class="background5">
+            <img src="{{ url_for('static', filename='service10.jpg') }}" id="image5" />
+        </div>
+    </main>
+
+</body>
+<footer class="footer">
+    <div class="container2">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Blood Donation</h4>
+                <ul>
+                    <li><a href="{{ url_for('index1') }}">Home</a></li>
+                    <li><a href="{{ url_for('about') }}">about us</a></li>
+                    <li><a href="{{ url_for('service') }}">Service</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Our service</h4>
+                <ul>
+                    <li><a href="#">24/7</a></li>
+                    <li><a href="#">Friendlyservice </a></li>
+                    <li><a href="#">Donation</a></li>
+                    <li><a href="#">Easy Interaction</a></li>
+                    
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Quotes</h4>
+                <ul>
+                    <p style="color: #bbbbbb;">Save Blood, Save Life 🩸</p>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>

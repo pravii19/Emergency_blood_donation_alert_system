@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style1.css') }}" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <section>
+        <nav>
+          <div class="menu">
+      
+            <div class="logo">
+              <a href="#">
+                  <img src="{{ url_for('static', filename='logo.jpg') }}" class="logo-image">
+                  <span class="logo-text">Blood donation</span>
+              </a>
+          </div>
+          
+    
+            <ul>
+              <li><a href="{{ url_for('index1') }}" >Home</a></li>
+              
+              <li><a href="{{ url_for('about') }}" >About us</a></li>
+                <li><a href="{{ url_for('service') }}" >Services</a></li>
+                <li><a href="{{ url_for('contact') }}" >Contact</a></li>
+            </ul>
+    
+            <button class="button" id="form-open">Login</button>
+          </div>
+          </nav>
+      
+      </section>
+      
+    <main class="content-wrap">
+      <div class="bg5">
+        <img src="{{ url_for('static', filename='cartoonblood3.jpg') }}" id="image" />
+      </div>
+      <div class="container5">
+        <h1 style="margin-top: 200px; font-size: 45px;">About Us</h1> <br>
+        <p style="font-family: 'Times New Roman', Times, serif; font-size: 20px; "
+          >Emergency Blood Donation, powered by Chatbot, connects donors with urgent blood needs seamlessly. Our user-friendly chat interface enables quick registration, finding nearby centers, and receiving real-time alerts. Join us in saving lives efficiently and compassionately through timely blood donations.</p>
+      </div>
+    </main>
+    <br /> <br> <br> <br>
+    <main class="wrap-content">
+      <div class="container1">
+        <h2 style="color: red"></h2> <br>
+        <div class="word" style="background-color: bisque;">
+        
+        <h1 style="font-size: 40px">
+          Together We Can Make World More Health & Better
+        </h1>
+        <br />
+        <p style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: 20px">
+          At 'Together We Can Make World More Health & Better,' we're driven by
+          a simple yet powerful belief: collective action can transform the
+          world. Our mission is clear—to enhance global health and well-being
+          through collaboration, advocacy, and empowerment. With a focus on
+          promoting health awareness, advocating for accessible healthcare,
+          supporting medical research and innovation, empowering communities,
+          addressing environmental health, fostering collaboration, and
+          championing equity and inclusion, we strive to make a tangible
+          difference in the lives of individuals and communities worldwide. By
+          uniting individuals, organizations, and governments, we're working
+          towards a future where everyone has the opportunity to lead healthier,
+          happier lives. Join us on this journey, because together, we can make
+          a world that's healthier and better for all."
+        </p>
+        <br />
+    </div>
+      </div>
+      <div class="bg1">
+        <img src="{{ url_for('static', filename='donor2.jpg') }}" id="image" />
+      </div>
+    </main> <br> <br> <br>
+    
+    <main class="content-wrap">
+      <div id="slideshow">
+        <div class="slide-wrapper" style="margin-top: 0px;">
+          <div class="slide"><img src="{{ url_for('static', filename='head4.jpg') }}" style="width: 100%;"></div>
+          <div class="slide"><img src="{{ url_for('static', filename='donor2.jpg') }}" style="width: 100%;"></div>
+          <div class="slide"><img src="{{ url_for('static', filename='blo.jpg') }}" style="width: 100%;"></div>
+          <div class="slide"><img src="{{ url_for('static', filename='bloodbg1.jpg') }}" style="width: 100%;"></div>
+          
+        </div>
+      </div>
+      <div class="container10" >
+        <h1 style="margin-top: 190px; font-size: 45px;">Our Future Plans</h1> <br>
+        <p style="font-family: 'Times New Roman', Times, serif; font-size: 20px; margin-top: 0px; "
+          >Real-time Assistance: Offer instant support for users with questions about blood donation.<br>
+          Appointment Scheduling: Enable users to book, reschedule, or cancel donation appointments.<br>
+          Personalized Recommendations: Provide tailored suggestions based on user preferences and donation history.<br>
+          Education and Awareness: Share informative content, dispel myths, and answer FAQs to increase awareness.<br>
+          Feedback and Support: Allow users to submit feedback, report issues, and receive assistance.<br>
+          Community Engagement: Engage users through quizzes, polls, and social media integration.<br>
+          Health Monitoring: Provide health tracking features and wellness tips for donors.</p>
+      </div>
+    </main>
+    <div class="slogan">
+      <h1 style="font-family: Agbalumo;text-align: center; margin-top: 80px;" class="animated-text">"Donate Blood, Save Lives! 🩸"</h1>
+      <br>
+    </div> <br> <br>
+    <div class="container3">
+      <div class="card">
+        <img src="{{ url_for('static', filename='logo5.jpg') }}" alt="Logo 1"> <br> <br>
+        <h2>Blood Donation</h2> <br> <br> <br> <br>
+        <p style="font-family: 'Times New Roman', Times, serif; font-size: 20px">Blood donation is the altruistic act of voluntarily giving blood to help save lives and improve healthcare outcomes.</p> <br> <br> <br> <br> <br>
+        <h4><a href="{{ url_for('about') }}">Learn More</a></h4>
+
+      </div>
+      <div class="card">
+        <img src="{{ url_for('static', filename='logo6.PNG') }}" alt="Logo 2"> <br> <br>
+        <h2>Blood Bank</h2> <br> <br> <br> <br>
+        <p style="font-family: 'Times New Roman', Times, serif; font-size: 20px">A blood bank is a facility that collects, stores, and distributes donated blood for transfusion purposes in medical treatments and emergencies.</p> <br> <br> <br> <br> 
+        <h4><a href="{{ url_for('about') }}">Learn More</a></h4>
+
+      </div>
+      <div class="card">
+        <img src="{{ url_for('static', filename='logo3.jpg') }}" alt="Logo 3"> <br> <br>
+        <h2 style="margin-bottom: -2px;">Save Life</h2> <br> <br> <br> <br>
+        <p style="font-family: 'Times New Roman', Times, serif; font-size: 20px" >"Give blood and save life" succinctly encapsulates the altruistic act of donating blood, emphasizing its potential to directly impact and save lives in need.</p> <br> <br> <br> <br> 
+        <h4><a href="{{ url_for('about') }}">Learn More</a></h4>
+      </div>
+  </div>
+
+  </body>
+  <footer class="footer">
+    <div class="container2">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Blood Donation</h4>
+                <ul>
+                    <li><a href="{{ url_for('index1') }}">Home</a></li>
+                    <li><a href="{{ url_for('about') }}">about us</a></li>
+                    <li><a href="{{ url_for('service') }}">Service</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Our service</h4>
+                <ul>
+                    <li><a href="#">24/7</a></li>
+                    <li><a href="#">Friendlyservice </a></li>
+                    <li><a href="#">Donation</a></li>
+                    <li><a href="#">Easy Interaction</a></li>
+                    
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Quotes</h4>
+                <ul>
+                    <p style="color: #bbbbbb;">Save Blood, Save Life 🩸</p>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>

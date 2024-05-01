@@ -1,0 +1,293 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo .logo-image {
+    margin-right: 10px; /* Adjust the margin to your preference */
+}
+
+.logo .logo-text {
+    font-weight: bold;
+}
+
+main{
+    unicode-bidi: isolate;
+}
+/* Body and HTML */
+body,
+html
+{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Agbalumo", system-ui;
+  overflow-x: hidden;
+}
+
+/*  container 1 start  */
+
+.content-wrapping {
+  display: flex;
+  margin-top: 50px;
+}
+.text-container {
+  flex: 1; /* Take up available space */
+  padding: 10px;
+  height: 200%;
+  align-items: center;
+  justify-content: center; /* Align content to the right */
+  padding: 20px;
+  position: relative;
+  display: inline-block;
+  margin-left: 20px;
+}
+.text-container::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(164, 247, 143, 0.808) ;
+  z-index: -1;
+}
+
+.background {
+  width: 50%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  margin-top: 0;
+}
+.text-container h1,
+.text-container p {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
+
+/*  container 1 end  */
+
+/*  container 2 start  */
+
+.wrapping-content {
+  display: flex;
+}
+.text-container1 {
+  flex: 2; /* Take up available space */
+  padding: 10px;
+  height: 200%;
+  align-items: center;
+  justify-content: center; /* Align content to the right */
+  padding: 20px;
+  position: relative; 
+  display: inline-block;
+  margin-right: 20px;
+}
+.text-container1::before{
+  content: '';
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(243, 152, 167);
+  z-index: -1;
+}
+
+.background1{
+  
+  width: 50%;
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+}
+.text-container1 h1,
+.text-container1 p{
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
+
+/*  container 2 end  */
+
+/*  container 3 start  */
+
+.content-wrapping1 {
+  display: flex;
+}
+.text-container2 {
+  flex: 3; /* Take up available space */
+  padding: 10px;
+  height: 200%;
+  align-items: center;
+  justify-content: center; /* Align content to the right */
+  padding: 20px;
+  position: relative;
+  display: inline-block;
+  margin-left: 20px;
+}
+.text-container2::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:rgb(209, 253, 253) ;
+  z-index: -1;
+}
+
+.background2 {
+  width: 50%;
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+  margin-top: 0;
+}
+.text-container2 h1,
+.text-container2 p {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
+
+/*  container 3 end  */
+
+/*  container 4 start  */
+
+.wrapping-content1 {
+  display: flex;
+}
+.text-container3 {
+  flex: 4; /* Take up available space */
+  padding: 10px;
+  height: 200%;
+  align-items: center;
+  justify-content: center; /* Align content to the right */
+  padding: 20px;
+  position: relative; 
+  display: inline-block;
+  margin-right: 20px;
+}
+.text-container3::before{
+  content: '';
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(161, 210, 250);
+  z-index: -1;
+}
+
+.background3{
+  
+  width: 50%;
+  height: 70vh;
+  position: relative;
+  overflow: hidden;
+}
+.text-container3 h1,
+.text-container3 p{
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
+
+/*  container 4 end  */
+
+/*  container 5 start  */
+
+.content-wrapping2 {
+  display: flex;
+}
+.text-container4 {
+  flex: 5; /* Take up available space */
+  padding: 10px;
+  height: 200%;
+  align-items: center;
+  justify-content: center; /* Align content to the right */
+  padding: 20px;
+  position: relative;
+  display: inline-block;
+  margin-left: 20px;
+}
+.text-container4::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(245, 185, 250, 0.808);
+  z-index: -1;
+}
+
+.background4 {
+  width: 50%;
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+  margin-top: 0;
+}
+.text-container4 h1,
+.text-container4 p {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
+
+/*  container 5 end  */
+
+/*  container 6 start  */
+
+.wrapping-content2 {
+  display: flex;
+}
+.text-container5 {
+  flex: 6; /* Take up available space */
+  padding: 10px;
+  height: 200%;
+  align-items: center;
+  justify-content: center; /* Align content to the right */
+  padding: 20px;
+  position: relative; 
+  display: inline-block;
+  margin-right: 20px;
+}
+.text-container5::before{
+  content: '';
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(247, 250, 158);
+  z-index: -1;
+}
+
+.background5{
+  
+  width: 50%;
+  height: 60vh;
+  position: relative;
+  overflow: hidden;
+}
+.text-container5 h1,
+.text-container5 p{
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
